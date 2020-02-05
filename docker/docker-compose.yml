@@ -33,5 +33,7 @@ services:
     deploy:
       placement:
         constraints: [node.role == manager]
+
+networks:
   web:
-    driver: bridge
+    driver: overlay
