@@ -10,6 +10,7 @@ services:
       - SERVICE_PORTS=80
     networks:
       - web
+    command: ["python", "app.py"]
     deploy:
       replicas: 4
       update_config:
